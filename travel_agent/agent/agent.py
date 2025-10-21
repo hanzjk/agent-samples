@@ -1,17 +1,16 @@
 # %%
-from dotenv import load_dotenv
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import Runnable
 from langchain_openai import ChatOpenAI
 
-from agent.utils import create_tool_node_with_fallback
-from agent.state import State
-from tools.car_rentals import *
-from tools.excursions import *
-from tools.flights import *
-from tools.hotels import *
-from tools.policies import *
+from travel_agent.agent.utils import create_tool_node_with_fallback
+from travel_agent.agent.state import State
+from travel_agent.tools.car_rentals import *
+from travel_agent.tools.excursions import *
+from travel_agent.tools.flights import *
+from travel_agent.tools.hotels import *
+from travel_agent.tools.policies import *
 
 load_dotenv(".env")
 

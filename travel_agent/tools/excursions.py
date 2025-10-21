@@ -3,7 +3,7 @@ from typing import Optional
 
 from langchain_core.tools import tool
 
-from tools import db
+from travel_agent.tools import db
 
 
 @tool

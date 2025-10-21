@@ -2,7 +2,7 @@ import dotenv
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
-from agent.agent import create_agent
+from travel_agent.agent.agent import create_agent
 
 
 app = FastAPI()

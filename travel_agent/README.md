@@ -33,7 +33,7 @@ The project loads environment variables using `python-dotenv` in `app.py`.
 Before starting the service, create and initialize the SQLite database using the provided setup script:
 
 ```bash
-python db_utils/setup.py
+python setup/db.py
 ```
 
 This will create the necessary database file(s) (for example `travel2.sqlite`) used by the project's tools.

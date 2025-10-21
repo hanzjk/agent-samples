@@ -6,7 +6,7 @@ import pytz
 from langchain_core.runnables import RunnableConfig
 from langchain_core.tools import tool
 
-from tools import db
+from travel_agent.tools import db
 
 
 @tool
