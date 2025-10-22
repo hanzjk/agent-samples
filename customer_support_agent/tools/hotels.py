@@ -4,7 +4,7 @@ from typing import Optional, Union
 
 from langchain_core.tools import tool
 
-from travel_agent.tools import db
+from customer_support_agent.tools import db
 
 
 @tool
