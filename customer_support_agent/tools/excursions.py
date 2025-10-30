@@ -3,7 +3,7 @@ from typing import Optional
 
 from langchain_core.tools import tool
 
-from customer_support_agent.tools import db
+from . import db
 
 
 @tool

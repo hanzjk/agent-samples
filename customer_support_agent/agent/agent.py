@@ -4,13 +4,13 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import Runnable
 from langchain_openai import ChatOpenAI
 
-from customer_support_agent.agent.utils import create_tool_node_with_fallback
-from customer_support_agent.agent.state import State
-from customer_support_agent.tools.car_rentals import *
-from customer_support_agent.tools.excursions import *
-from customer_support_agent.tools.flights import *
-from customer_support_agent.tools.hotels import *
-from customer_support_agent.tools.policies import *
+from .utils import create_tool_node_with_fallback
+from .state import State
+from tools.car_rentals import *
+from tools.excursions import *
+from tools.flights import *
+from tools.hotels import *
+from tools.policies import *
 
 load_dotenv(".env")
 
