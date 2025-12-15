@@ -39,7 +39,7 @@ def run_agent(thread_id: int, question: str, passenger_id: str = "3442 587242"):
     return final_answer
 
 
-@app.post("/invocations")
+@app.post("/chat")
 async def invocations(payload: dict):
     # Process the payload as needed
     result = {"results": run_agent(payload["thread_id"], payload["question"],  payload["passenger_id"],)}
