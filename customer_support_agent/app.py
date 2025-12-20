@@ -42,5 +42,5 @@ def run_agent(thread_id: int, question: str, passenger_id: str = "3442 587242"):
 @app.post("/chat")
 async def invocations(payload: dict):
     # Process the payload as needed
-    result = {"results": run_agent(payload["thread_id"], payload["question"],  payload["passenger_id"],)}
+    result = {"results": run_agent(payload["session_id"], payload["message"],)}
     return JSONResponse(content=result)
